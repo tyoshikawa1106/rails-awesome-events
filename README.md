@@ -1,1 +1,1 @@
-## Rails Awesome_events
+## Rails Awesome Events

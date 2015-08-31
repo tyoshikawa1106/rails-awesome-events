@@ -22,6 +22,9 @@ gem 'jquery-rails', '4.0.4'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '2.3.1'
 
+gem 'omniauth', '~> 1.2.1'
+gem 'omniauth-twitter', '~> 1.0.1'
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

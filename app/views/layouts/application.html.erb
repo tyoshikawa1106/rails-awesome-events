@@ -10,11 +10,26 @@
     <header class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <%= link_to 'AwesomeEvents', root_path, class: 'navbar-brand' %>
+          <%= link_to 'Awesome Events', root_path, class: 'navbar-brand' %>
+        </div>
+        <div class="collapse navbar-collapse" id="bx-example-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+          </ul>
         </div>
       </div>
     </header>
     <div class="container">
+      <% if flash[:notice] %>
+        <div class="alert alert-success">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div class="alert alert-danger">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
   </body>

@@ -24,6 +24,11 @@ gem 'jbuilder', '2.3.1'
 
 gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-twitter', '~> 1.0.1'
+gem 'kaminari', '~> 0.16.3'
+gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'ransack', '~> 1.7.0'
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 3.7.0'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

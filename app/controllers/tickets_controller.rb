@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class TicketsController < ApplicationController
   before_action :authenticate
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class User < ActiveRecord::Base
   before_destroy :check_all_events_finished
 

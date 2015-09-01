@@ -5,28 +5,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <!-- bootstrap sf1 -->
+    <%= javascript_include_tag "bootstrap-sf1/js/docs.js" %>
+    <%= stylesheet_link_tag "bootstrap-sf1/dist/css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "bootstrap-sf1/dist/css/docs.min.css" %>
   </head>
   <body>
-    <header class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <%= link_to 'Awesome Events', root_path, class: 'navbar-brand' %>
-        </div>
-        <div class="collapse navbar-collapse" id="bx-example-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <%= render 'header' %>
     <div class="container">
       <% if flash[:notice] %>
-        <div class="alert alert-success">
+        <div class="alert alert-success" style="margin-top: 10px;">
           <%= flash[:notice] %>
         </div>
       <% end %>
       <% if flash[:alert] %>
-        <div class="alert alert-danger">
+        <div class="alert alert-danger" style="margin-top: 10px;">
           <%= flash[:alert] %>
         </div>
       <% end %>

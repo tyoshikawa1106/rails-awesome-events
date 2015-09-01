@@ -1,0 +1,20 @@
+<header class="navbar navbar-default navbar-static-top navbar-branded" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'Awesome Events', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class="collapse navbar-collapse" id="bx-example-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'ホーム', root_path %></li>
+        <li><%= link_to 'イベント作成', new_event_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to '退会', retire_user_path %></li>
+          <li><%= link_to 'ログアウト', logout_path %></li>
+        <% else %>
+          <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+        <% end %>
+        <li><%= link_to 'LINK', 'https://github.com/willnet/awesome_events', { :target => '_blank' } %></li>
+      </ul>
+    </div>
+  </div>
+</header>

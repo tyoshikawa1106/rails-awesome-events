@@ -30,6 +30,12 @@ gem 'ransack', '~> 1.7.0'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 3.7.0'
 
+gem 'hirb', group: [:development, :test]
+gem 'hirb-unicode', group: [:development, :test]
+
+gem 'better_errors', group: [:development, :test]
+gem 'binding_of_caller', group: [:development, :test]
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

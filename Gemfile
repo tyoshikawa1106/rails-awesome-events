@@ -36,6 +36,8 @@ gem 'hirb-unicode', group: [:development, :test]
 gem 'better_errors', group: [:development, :test]
 gem 'binding_of_caller', group: [:development, :test]
 
+gem 'rails-erd', group: [:development, :test]
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

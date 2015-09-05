@@ -38,6 +38,8 @@ gem 'binding_of_caller', group: [:development, :test]
 
 gem 'rails-erd', group: [:development, :test]
 
+gem 'newrelic_rpm'
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
